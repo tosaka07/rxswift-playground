@@ -12,7 +12,29 @@
 		A19866B920525E85004AA059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19866B720525E85004AA059 /* Main.storyboard */; };
 		A19866BB20525E85004AA059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19866BA20525E85004AA059 /* Assets.xcassets */; };
 		A19866BE20525E85004AA059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19866BC20525E85004AA059 /* LaunchScreen.storyboard */; };
+		A198671B2052633B004AA059 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19867182052633B004AA059 /* RxSwift.framework */; };
+		A198671C2052633B004AA059 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A19867182052633B004AA059 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A198671D2052633B004AA059 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19867192052633B004AA059 /* RxBlocking.framework */; };
+		A198671E2052633B004AA059 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A19867192052633B004AA059 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A198671F2052633B004AA059 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A198671A2052633B004AA059 /* RxCocoa.framework */; };
+		A19867202052633B004AA059 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A198671A2052633B004AA059 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A19867212052633B004AA059 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A19867202052633B004AA059 /* RxCocoa.framework in Embed Frameworks */,
+				A198671C2052633B004AA059 /* RxSwift.framework in Embed Frameworks */,
+				A198671E2052633B004AA059 /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A19866B020525E85004AA059 /* RxSwiftPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +44,13 @@
 		A19866BA20525E85004AA059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A19866BD20525E85004AA059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19866BF20525E85004AA059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1986708205262EA004AA059 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		A1986709205262EA004AA059 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		A198670A205262EA004AA059 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		A19867182052633B004AA059 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		A19867192052633B004AA059 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		A198671A2052633B004AA059 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		A198672320526446004AA059 /* Test01.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test01.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A198671F2052633B004AA059 /* RxCocoa.framework in Frameworks */,
+				A198671B2052633B004AA059 /* RxSwift.framework in Frameworks */,
+				A198671D2052633B004AA059 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +70,12 @@
 		A19866A720525E84004AA059 = {
 			isa = PBXGroup;
 			children = (
+				A19867192052633B004AA059 /* RxBlocking.framework */,
+				A198671A2052633B004AA059 /* RxCocoa.framework */,
+				A19867182052633B004AA059 /* RxSwift.framework */,
 				A19866B220525E85004AA059 /* RxSwiftPlayground */,
 				A19866B120525E85004AA059 /* Products */,
+				A1986707205262EA004AA059 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +90,7 @@
 		A19866B220525E85004AA059 /* RxSwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				A198672320526446004AA059 /* Test01.playground */,
 				A19866B320525E85004AA059 /* AppDelegate.swift */,
 				A19866B520525E85004AA059 /* ViewController.swift */,
 				A19866B720525E85004AA059 /* Main.storyboard */,
@@ -62,6 +99,16 @@
 				A19866BF20525E85004AA059 /* Info.plist */,
 			);
 			path = RxSwiftPlayground;
+			sourceTree = "<group>";
+		};
+		A1986707205262EA004AA059 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A198670A205262EA004AA059 /* RxBlocking.framework */,
+				A1986708205262EA004AA059 /* RxCocoa.framework */,
+				A1986709205262EA004AA059 /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +121,7 @@
 				A19866AC20525E85004AA059 /* Sources */,
 				A19866AD20525E85004AA059 /* Frameworks */,
 				A19866AE20525E85004AA059 /* Resources */,
+				A19867212052633B004AA059 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54T4SR4QQW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxSwiftPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shogo.RxSwiftPlayground;
@@ -291,6 +343,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54T4SR4QQW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxSwiftPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shogo.RxSwiftPlayground;
